@@ -1355,3 +1355,15 @@ button{
   color: #fff;
   cursor: pointer;
 }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
