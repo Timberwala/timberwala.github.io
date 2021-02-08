@@ -10,10 +10,12 @@
   <link rel="stylesheet" href="css/camera.css" />
   <link rel="stylesheet" href="css/owl-carousel.css" />
   <link rel="stylesheet" href="css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="css/nothuman.css" />
 
   <script src="js/jquery.js"></script>
   <script src="js/jquery-migrate.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
 
 
   <!--[if lt IE 9]>
@@ -203,7 +205,7 @@
       </div>
     </div>
 
-    <div class="bg-dark" id="formBlock">
+    <div class="bg-dark">
       <div class="well2">
         <div class="container">
           <h3>Contact form</h3>
@@ -242,14 +244,22 @@
         
             <label for="subject">Message</label>
             <textarea id="message" name="message" placeholder="Specify Your Requirements" style="height:200px"></textarea>
-           <!--  <div class="g-recaptcha" data-sitekey="6LeokRsaAAAAAJSDnGd5mP_0CKmT2BH2T9yOVi-x"></div>
-            <br/>
-            <div class="g-recaptcha" data-sitekey="6LeokRsaAAAAAJSDnGd5mP_0CKmT2BH2T9yOVi-x"></div><br>
-           <div class="capt"> 
-   <h2 type="text" id="mainCaptcha"></h2>
-   <p><input type="button" id="refresh" onclick="Captcha();"/></p>            <input type="text" id="txtInput"/>    
-   <input id="Button1" type="button" value="Check" onclick="alert(ValidCaptcha());"/>
-   </div> -->
+           <div class="captcha">
+	<div class="spinner">
+		<label>
+			<input required type="checkbox" onclick="$(this).attr('disabled','disabled');">
+			<span class="checkmark"><span>&nbsp;</span></span>
+		</label>
+	</div>
+	<div class="text">
+		I'm not a robot
+	</div>
+	<div class="logo">
+		<img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
+		<p>reCAPTCHA</p>
+		<small>Privacy - Terms</small>
+	</div>
+</div><br>
             <button class="button" id="my-form-button">Submit</button>
             <br>
             <p id="my-form-status"></p>
