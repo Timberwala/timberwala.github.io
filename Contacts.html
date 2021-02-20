@@ -1,21 +1,24 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-<title>Timbers</title>
-<meta charset="utf-8">
-<meta name="format-detection" content="telephone=no" />
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/grid.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/camera.css" />
-<link rel="stylesheet" href="css/owl-carousel.css" />
-<link rel="stylesheet" href="css/jquery.fancybox.css" />
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/camera.css" />
+  <link rel="stylesheet" href="css/owl-carousel.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="css/nothuman.css" />
 
-<script src="js/jquery.js"></script>
-<script src="js/jquery-migrate.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
 
-<!--[if lt IE 9]>
+
+  <!--[if lt IE 9]>
   <html class="lt-ie9">
   <div style=' clear: both; text-align:center; position: relative;'>
     <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
@@ -27,15 +30,16 @@
   <script src='js/selectivizr-min.js'></script>
   <![endif]-->
 
-<script src='js/device.min.js'></script>
+  <script src='js/device.min.js'></script>
 </head>
 
-<body>
-	<div class="page">
-		<!--========================================================
+<body >
+<div class="page">
+  <!--========================================================
                             HEADER
   =========================================================-->
-		<header id="header" class="header">
+
+    <header id="header" class="header">
 			<div class="header_panel">
 				<div class="brand">
 					<h1 class="brand_name">
@@ -74,7 +78,7 @@
 					<div class="menu">
 						<ul>
 
-							<li><a class="mainmenu" href="index-2.html">Timbers</a>
+							<li><a class="mainmenu" href="Timbers.html">Timbers</a>
 								<ul class="submenu">
 									<li><a rel="gallery"
 										title="East Indian RoseWood(Dalbergia Latifolia)"
@@ -112,8 +116,8 @@
 										class="thumb fancybox" href="#eleven"> Pterocarpus
 											Marsupium </a></li>
 								</ul></li>
-							<li><a class="mainmenu" href="index-3.html">Services</a></li>
-							<li><a class="mainmenu" href="index-5.html">Contacts</a></li>
+							<li><a class="mainmenu" href="Services.html">Services</a></li>
+							<li class="active"><a class="mainmenu" href="Contacts.html">Contacts</a></li>
 						</ul>
 					</div>
 					<div class="menu-toggle">
@@ -125,7 +129,7 @@
 				<nav class="nav">
 					<ul class="sf-menu">
 						<li ><a class="fa fa-home" href="./"></a></li>
-						<li class="active"><a href="index-2.html">Timbers</a>
+						<li><a href="Timbers.html">Timbers</a>
 							<ul>
 								<li><a rel="gallery"
 									title="East Indian RoseWood(Dalbergia Latifolia)"
@@ -162,8 +166,8 @@
 									<li><a rel="gallery" title=" Pterocarpus Marsupium"
 										class="thumb fancybox" href="#eleven">  Pterocarpus Marsupium </a></li>
 							</ul></li>
-						<li><a href="index-3.html">Services</a></li>
-						<li><a href="index-5.html">Contacts</a></li>
+						<li><a href="Services.html">Services</a></li>
+						<li class="active"><a href="Contacts.html">Contacts</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -171,186 +175,109 @@
 
 
 		</header>
-		<!--========================================================
+        
+  <!--========================================================
                             CONTENT
   =========================================================-->
-		<section id="content" class="content">
+  <section id="content" class="content">
 
-			<div class="well2 well2__ins1">
-				<div class="container wow fadeIn" data-wow-delay="0.2s">
-					<h3>our products</h3>
+    <div class="well3 bg-secondary">
+      <div class="container">
+        <h3>Our addresses: due to covid 19 our support team is working virually.</h3>
 
-					<div class="owl-carousel">
-						<div class="item">
-							<a rel="gallery"
-								title="East Indian RoseWood(Dalbergia Latifolia)"
-								class="thumb fancybox" href="#one"> <img
-								src="images/page-1_img01.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
+        <div class="row">
+          <div class="grid_4">
+            <address class="addr">
+              <p>
+			2nd Cross,Dinnur Road. <br/>
+			RT nagar Bangalore, Karnataka India.
+              </p>
+              <dl>
+                <dt>Telephone:</dt>
+                <dd>+91 9019531346</dd>
+              </dl>
+              <p>E-mail:
+                <a href="#"> support@timberwala.in</a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
 
-								<div id="vestibulum" class="thumb_cnt">
-									<h3>East Indian RoseWood(Dalbergia Latifolia)</h3>
+    <div class="bg-dark">
+      <div class="well2">
+        <div class="container">
+          <h3>Contact form</h3>
 
-									<p>East Indian RoseWood</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
+          
+          <form   id="my-form"
+          action="https://formspree.io/f/mdoppyrw"
+          method="POST"
+        >
+            <label for="fname">Full Name</label>
+            <input required oninvalid="this.setCustomValidity('Enter Name')" type="text" id="fname" name="fullname" placeholder="Your name..">
+        
+            <label for="lname">Phone Number</label>
+            <input  type="text" id="phone" name="phone" placeholder="Your Phone Number..">
+        
+            <label for="lname">Email </label>
+            <input required oninvalid="this.setCustomValidity('Email cannot be blank')" type="text" id="phone" name="email" placeholder="Your Email ..">
+        
+         
+        
+            <label for="country">Product</label>
+            <select required oninvalid="this.setCustomValidity('Select Product ')" id="produc" name="product">
+              <option value="" disabled selected hidden>Select Timber Type</option>
+              <option value="East Indian RoseWood(Dalbergia Latifolia)">East Indian RoseWood(Dalbergia Latifolia)</option>
+              <option value="Acacia Round Logs">Acacia</option>
+              <option value="Pterocarpus Marsupium">Pterocarpus Marsupium</option>
+              <option value="Terminalia Paniculata">Terminalia Paniculata</option>
+              <option value="Terminalia Tomentosa">Terminalia Tomentosa</option>
+              <option value="Xylia Xylocarpa">Xylia Xylocarpa</option>
+              <option value="Grwia Tilaefolia">Grwia Tilaefolia</option>
+              <option value="Mitragyna Parvifolia">Mitragyna Parvifolia</option>
+              <option value="Adina Cordifolia">Adina Cordifolia</option>
+              <option value="Anogeissus Latifolia">Anogeissus Latifolia</option>
+              <option value="Anogeissus Latifolia">East Indian Teak Wood</option>
+            </select>
+        
+            <label for="subject">Message</label>
+            <textarea id="message" name="message" placeholder="Specify Your Requirements" style="height:200px"></textarea>
+           <div class="captcha">
+	<div class="spinner">
+		<label>
+			<input required type="checkbox" onclick="$(this).attr('disabled','disabled');">
+			<span class="checkmark"><span>&nbsp;</span></span>
+		</label>
+	</div>
+	<div class="text">
+		I'm not a robot
+	</div>
+	<div class="logo">
+		<img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
+		<p>reCAPTCHA</p>
+		<small>Privacy - Terms</small>
+	</div>
+</div><br>
+            <button class="button" id="my-form-button">Submit</button>
+            <br>
+            <p id="my-form-status"></p>
+      
+          </form>
 
-								</div>
+        </div>
+      </div>
+    </div>
 
-							</a> <a rel="gallery" title="East Indian Teak Wood  "
-								class="thumb fancybox" href="#two"> <img
-								src="images/page-1_img04.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
+  </section>
+  
 
-								<div class="thumb_cnt">
-									<h3>East Indian Teak Wood  </h3>
-
-									<p></p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-
-						<div class="item">
-							<a rel="gallery" title="Indian Acacia"
-								class="thumb fancybox" href="#three"> <img
-								src="images/page-1_img02.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Acacia</h3>
-
-									<p></p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-								</div>
-							</a> <a rel="gallery" title="Terminalia Paniculata"
-								class="thumb fancybox" href="#four"> <img
-								src="images/page-1_img05.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Terminalia Paniculata</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-						<div class="item">
-							<a class="thumb"<a rel="gallery"
-								title="Terminalia Tomentosa" class="thumb fancybox" href="#five">
-									<img src="images/page-1_img03.jpg" alt="" /> <span
-									class="thumb_overlay"></span>
-
-									<div class="thumb_cnt">
-										<h3>Terminalia Tomentosa</h3>
-
-										<p>Fusce suscipiibus et magnis dis parient montes,
-											nascetur ride feugiat malesuada odio.</p>
-										<span href="#products"><button>Details</button></span> <span
-											onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-									</div>
-							</a> <a rel="gallery" title="Terminalia Tomentosa"
-								class="thumb fancybox" href="#six"> <img
-									src="images/page-1_img06.jpg" alt="" /> <span
-									class="thumb_overlay"></span>
-
-									<div class="thumb_cnt">
-										<h3>Xylia Xylocarpa</h3>
-
-										<p>Fusce suscipiibus et magnis dis parient montes,
-											nascetur ride feugiat malesuada odio.</p>
-										<span href="#products"><button>Details</button></span> <span
-											onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-									</div>
-							</a>
-						</div>
-						<div class="item">
-							<a rel="gallery" title="Grwia Tilaefolia" class="thumb fancybox"
-								href="#seven"> <img src="images/page-1_img01.jpg" alt="" />
-								<span class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Grwia Tilaefolia</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-								</div>
-							</a> <a rel="gallery" title="Mitragyna Parvifolia"
-								class="thumb fancybox" href="#eight"> <img
-								src="images/page-1_img04.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Mitragyna Parvifolia</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-						<div class="item">
-							<a rel="gallery" title="Adina Cordifolia" class="thumb fancybox"
-								href="#nine"> <img src="images/page-1_img01.jpg" alt="" />
-								<span class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Adina Cordifolia</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-								</div>
-							</a> <a rel="gallery" title="Anogeissus Latifolia"
-								class="thumb fancybox" href="#ten"> <img
-								src="images/page-1_img04.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Anogeissus Latifolia</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-						
-						<div class="item">
-							 <a rel="gallery" title="Pterocarpus Marsupium"
-								class="thumb fancybox" href="#eleven"> <img
-								src="images/page-1_img04.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3> Pterocarpus Marsupium </h3>
-
-									<p></p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='index-5.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!--========================================================
+    <!--========================================================
                             FOOTER
   =========================================================-->
-		<footer id="footer" class="footer">
-			<div class="container">
+  <footer id="footer" class="footer">
+    <div class="container">
 				<div class="row">
 					<div class="grid_3">
 						<h6>Products</h6>
@@ -667,7 +594,7 @@
 								</div></li>
 
 							<li><a rel="gallery" title="" class="thumb fancybox"
-								href="#eleven">Pterocarpus Marsupium </a>
+								href="#eleven"> Pterocarpus Marsupium </a>
 								<div id="eleven" style="display: none">
 									<div class="row">
 										<div class="column">
@@ -702,13 +629,13 @@
 						</ul>
 					</div>
 
-					<div class="grid_3">
+       <div class="grid_3">
 						<h6>Company</h6>
 						<ul class="list">
 							<li ><a href='index.html'>Home</a></li>
-							<li class="active"><a href='#'>Timbers</a></li>
-							<li><a href='index-3.html'>Services</a></li>
-							<li><a href='index-5.html'>Contacts</a></li>
+							<li ><a href='Timbers.html'>Timbers</a></li>
+							<li><a href='Services.html'>Services</a></li>
+							<li class="active"><a href='#'>Contacts</a></li>
 						</ul>
 						<h6>Follow us</h6>
 						<ul class="list">
@@ -729,30 +656,32 @@
 							</dd>
 						</dl>
 					</div>
-				</div>
+      </div>
 
-				<div class="row">
-					<div class="grid_5">
-						<div class="brand">
-							<h1 class="brand_name">
-								<a href="./">Timberwala</a>
-							</h1>
+      <div class="row">
+        <div class="grid_5">
+          <div class="brand">
+            <h1 class="brand_name">
+              <a href="./">Timberwala</a>
+            </h1>
 
-							<p class="brand_slogan">Timber selling Co</p>
-						</div>
-					</div>
-					<div class="grid_7 right">
-						<div class="copyright">
-							TIMBERWALA TIMBER SELLING CO © <span id="copyright-year"></span>
-							<a href="index-6.html">Privacy policy</a>
-							<!-- {%FOOTER_LINK} -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script>
+            <p class="brand_slogan">
+              Timber selling Co
+            </p>
+          </div>
+        </div>
+        <div class="grid_7 right">
+          <div class="copyright">
+            TIMBERWALA TIMBER SELLING CO © <span id="copyright-year"></span>
+            <a href="index-6.html">Privacy policy</a>
+            <!-- {%FOOTER_LINK} -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
   function StopEventPropagation(event) {
     if (event.stopPropagation) {
       event.stopPropagation();
@@ -762,11 +691,62 @@
   }
 </script>
 
-	<script>$(document).ready(function() {
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+
+    // get the form elements defined in your form HTML above
+    
+    var form = document.getElementById("my-form");
+    var button = document.getElementById("my-form-button");
+    var status = document.getElementById("my-form-status");
+
+    // Success and Error functions for after the form is submitted
+    
+    function success() {
+      form.reset();
+      button.style = "background-color:blue";
+      button.innerText = "Submitted";
+      status.innerHTML = "<h3>Thanks For Contacting Timberwala We will Get You Shortly</h3>";
+     
+    }
+
+    function error() {
+      status.innerHTML = "Oops! There was a problem.";
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+  
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+</script>
+
+
+<script>$(document).ready(function() {
 $("a.fancybox").fancybox()
 });</script>
-	<script src="js/script.js"></script>
-	<script>
+<script src="js/script.js"></script>
+<script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -776,7 +756,7 @@ $("a.fancybox").fancybox()
     }
   }
   </script>
-	<script>
+  <script>
     $(document).ready(function(){
     $(".menu-toggle a").click(function(){ 
       $(".menu").slideToggle(700);

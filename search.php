@@ -119,16 +119,16 @@
             </ul>
           </li>
           <li>
-            <a href="index-2.html">Timbers</a>
+            <a href="Timbers.html">Timbers</a>
           </li>
           <li>
-            <a href="index-3.html">Services</a>
+            <a href="Services.html">Services</a>
           </li>
           <li>
             <a href="index-4.html">Environment</a>
           </li>
           <li>
-            <a href="index-5.html">Contacts</a>
+            <a href="Contacts.html">Contacts</a>
           </li>
         </ul>
       </nav>
