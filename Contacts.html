@@ -17,12 +17,6 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src='js/device.min.js'></script>
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="4c79e5f0-da27-44bf-a6a4-ac6272a0da31";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-	<script type='text/javascript'>
-	$(function() {
-		$("#header").load("Header.html");
-		$("#footer").load("footer.html");
-	});
-</script>
 </head>
 
 <body>
@@ -193,11 +187,17 @@
 </script>
 
 
-<script>$(document).ready(function() {
-$("a.fancybox").fancybox()
-});</script>
 <script src="js/script.js"></script>
-<script>
+<script type='text/javascript'>
+	$(function() {
+		$("#header").load("Header.html");
+		$("#footer").load("footer.html");
+		$("a.fancybox").fancybox();
+		$(".menu-toggle a").click(function(){ 
+      	$(".menu").slideToggle(700);
+		});
+	});
+</script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

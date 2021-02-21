@@ -15,16 +15,6 @@
 
   <script src='js/device.min.js'></script>
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="4c79e5f0-da27-44bf-a6a4-ac6272a0da31";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-<script type='text/javascript'>
-	$(function() {
-		$("#header").load("Header.html");
-		$("#footer").load("footer.html");
-		$("a.fancybox").fancybox();
-		$(".menu-toggle a").click(function(){ 
-      	$(".menu").slideToggle(700);
-		});
-	});
-</script>
 </head>
 
 <body>
@@ -105,6 +95,18 @@
   <footer id="footer" class="footer">
   </footer>
 </div>
+<script src="js/script.js"></script>
+<script type='text/javascript'>
+	$(function() {
+		$("#header").load("Header.html");
+		$("#footer").load("footer.html");
+		$("a.fancybox").fancybox();
+		$(".menu-toggle a").click(function(){ 
+      	$(".menu").slideToggle(700);
+		});
+	});
+</script>
+
 <script>
   function StopEventPropagation(event) {
     if (event.stopPropagation) {
@@ -114,11 +116,6 @@
     }
   }
 </script>
-
-<script>$(document).ready(function() {
-//$("a.fancybox").fancybox()
-});</script>
-<script src="js/script.js"></script>
 <script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -128,14 +125,6 @@
       x.className = "topnav";
     }
   }
-  </script>
-  <script>
-  //  $(document).ready(function(){
-   // $(".menu-toggle a").click(function(){ 
-    //  $(".menu").slideToggle(700);
-    //});
-  //});
-  </script>
 </body>
 
 </html>
