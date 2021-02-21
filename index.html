@@ -2,237 +2,55 @@
 <html lang="en">
 
 <head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <meta name="format-detection" content="telephone=no" />
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/camera.css" />
-  <link rel="stylesheet" href="css/owl-carousel.css" />
-  <link rel="stylesheet" href="css/jquery.fancybox.css" />
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/camera.css" />
+<link rel="stylesheet" href="css/owl-carousel.css" />
+<link rel="stylesheet" href="css/jquery.fancybox.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate.js"></script>
 
-  <script src="js/jquery.js"></script>
-
-  <script src="js/jquery-migrate.js"></script>
-
-  <script src='js/device.min.js'></script>
-  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="4c79e5f0-da27-44bf-a6a4-ac6272a0da31";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-  <script type='text/javascript'> 
-    $(function(){
-      $(".page").load("Header.html"); 
-    });
-    </script> 
+<script src='js/device.min.js'></script>
+<script type="text/javascript">
+	window.$crisp = [];
+	window.CRISP_WEBSITE_ID = "4c79e5f0-da27-44bf-a6a4-ac6272a0da31";
+	(function() {
+		d = document;
+		s = d.createElement("script");
+		s.src = "https://client.crisp.chat/l.js";
+		s.async = 1;
+		d.getElementsByTagName("head")[0].appendChild(s);
+	})();
+</script>
+<script type='text/javascript'>
+	$(function() {
+		$("#header").load("Header.html");
+		$("#products").load("products.html");
+		$("#service_types").load("service_types.html");
+	});
+</script>
 </head>
 
 <body>
-<div class="page">
-  <!--========================================================
+	<div class="page">
+		<header id="header" class="header"> </header>
+		<!--========================================================
                             CONTENT
   =========================================================-->
-    <section id="content" class="content">
+		<section id="content" class="content">
 
-     <div class="well2 well2__ins1">
-				<div class="container wow fadeIn" data-wow-delay="0.2s">
-					<h3>our products</h3>
+			<div class="well2 well2__ins1" id="products"></div>
+			<div class="bg-dark well2" id="service_types"></div>
+		</section>
 
-					<div class="owl-carousel">
-						<div class="item">
-							<a rel="gallery"
-								title="East Indian RoseWood(Dalbergia Latifolia)"
-								class="thumb fancybox" href="#one"> <img
-								src="images/page-1_img01.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div id="vestibulum" class="thumb_cnt">
-									<h3>East Indian RoseWood(Dalbergia Latifolia)</h3>
-
-									<p>East Indian RoseWood</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-
-								</div>
-
-							</a> <a rel="gallery" title="East Indian Teak Wood  "
-								class="thumb fancybox" href="#two"> <img
-								src="images/page-1_img04.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>East Indian Teak Wood  </h3>
-
-									<p></p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-
-						<div class="item">
-							<a rel="gallery" title="Indian Acacia"
-								class="thumb fancybox" href="#three"> <img
-								src="images/page-1_img02.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Acacia</h3>
-
-									<p></p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-								</div>
-							</a> <a rel="gallery" title="Terminalia Paniculata"
-								class="thumb fancybox" href="#four"> <img
-								src="images/page-1_img05.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Terminalia Paniculata</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-						<div class="item">
-							<a class="thumb"<a rel="gallery"
-								title="Terminalia Tomentosa" class="thumb fancybox" href="#five">
-									<img src="images/page-1_img03.jpg" alt="" /> <span
-									class="thumb_overlay"></span>
-
-									<div class="thumb_cnt">
-										<h3>Terminalia Tomentosa</h3>
-
-										<p>Fusce suscipiibus et magnis dis parient montes,
-											nascetur ride feugiat malesuada odio.</p>
-										<span href="#products"><button>Details</button></span> <span
-											onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-									</div>
-							</a> <a rel="gallery" title="Terminalia Tomentosa"
-								class="thumb fancybox" href="#six"> <img
-									src="images/page-1_img06.jpg" alt="" /> <span
-									class="thumb_overlay"></span>
-
-									<div class="thumb_cnt">
-										<h3>Xylia Xylocarpa</h3>
-
-										<p>Fusce suscipiibus et magnis dis parient montes,
-											nascetur ride feugiat malesuada odio.</p>
-										<span href="#products"><button>Details</button></span> <span
-											onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-									</div>
-							</a>
-						</div>
-						<div class="item">
-							<a rel="gallery" title="Grwia Tilaefolia" class="thumb fancybox"
-								href="#seven"> <img src="images/page-1_img01.jpg" alt="" />
-								<span class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Grwia Tilaefolia</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-								</div>
-							</a> <a rel="gallery" title="Mitragyna Parvifolia"
-								class="thumb fancybox" href="#eight"> <img
-								src="images/page-1_img04.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Mitragyna Parvifolia</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-						<div class="item">
-							<a rel="gallery" title="Adina Cordifolia" class="thumb fancybox"
-								href="#nine"> <img src="images/page-1_img01.jpg" alt="" />
-								<span class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Adina Cordifolia</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-								</div>
-							</a> <a rel="gallery" title="Anogeissus Latifolia"
-								class="thumb fancybox" href="#ten"> <img
-								src="images/page-1_img04.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3>Anogeissus Latifolia</h3>
-
-									<p>Fusce suscipiibus et magnis dis parient montes, nascetur
-										ride feugiat malesuada odio.</p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-						
-						<div class="item">
-							 <a rel="gallery" title="Pterocarpus Marsupium"
-								class="thumb fancybox" href="#eleven"> <img
-								src="images/page-1_img04.jpg" alt="" /> <span
-								class="thumb_overlay"></span>
-
-								<div class="thumb_cnt">
-									<h3> Pterocarpus Marsupium </h3>
-
-									<p></p>
-									<span href="#products"><button>Details</button></span> <span
-										onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-      <div class="bg-dark well2">
-        <div class="container wow fadeIn" data-wow-delay="0.2s">
-          <h3>Our services
-          </h3>
-
-          <div class="row center">
-            <div class="grid_3">
-              <div class="icon-08"></div>
-              <h6>
-                <a href='#'>Timber Structure Inspections.</a>
-              </h6>
-              <p class="large">Technicians tests every angle of the structure.</p>
-            </div>
-            <div class="grid_3">
-              <div class="icon-14"></div>
-              <h6>
-                <a href='#'>Timber Quality Testing</a>
-              </h6>
-              <p class="large">We specialize in wood testing, wood species identification.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!--========================================================
+		<!--========================================================
                             FOOTER
   =========================================================-->
-    <footer id="footer" class="footer">
+		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="grid_3">
@@ -294,17 +112,20 @@
 												style="width: 100%">
 										</div>
 									</div>
-									
+
 									<br> <br> <strong>Product</strong>: East Indian Teak
 									Wood(Tectona grandis) <br> <strong>Description</strong>:
-									Are you looking for teak wood better than burma , Timberwala has to offer you 
-									East Indian teak wood which grows  in the western ghats of india ,it is rich in oil,grains with minerals 
-									such as silicates, manganese, mica, iron and other vital tertiary minerals. 
-									Its texture is golden brown coloured and irregular spiral and straight grains.<br> <strong>Usage/Application
+									Are you looking for teak wood better than burma , Timberwala
+									has to offer you East Indian teak wood which grows in the
+									western ghats of india ,it is rich in oil,grains with minerals
+									such as silicates, manganese, mica, iron and other vital
+									tertiary minerals. Its texture is golden brown coloured and
+									irregular spiral and straight grains.<br> <strong>Usage/Application
 									</strong>: Home Construction,Furniture,Veneer,wooden flooring<br> <strong>Log
-										Species: Tectona grandis </strong><br> <strong>Colors</strong>: light brown
-									and dark red<br> <strong>Wood Type</strong>: Hard Wood<br>
-									<strong>Botanical Name</strong>: Tectona grandis<br>
+										Species: Tectona grandis </strong><br> <strong>Colors</strong>:
+									light brown and dark red<br> <strong>Wood Type</strong>:
+									Hard Wood<br> <strong>Botanical Name</strong>: Tectona
+									grandis<br>
 								</div></li>
 
 							<li><a rel="gallery" title="" class="thumb fancybox"
@@ -320,8 +141,8 @@
 												style="width: 100%">
 										</div>
 										<div class="column">
-											<img src="images/model/acacia/acacia_cut_1.jpg" alt="Mountains"
-												style="width: 100%">
+											<img src="images/model/acacia/acacia_cut_1.jpg"
+												alt="Mountains" style="width: 100%">
 										</div>
 									</div>
 									<br> <br> <strong>Product</strong>: Acacia <br>
@@ -357,11 +178,12 @@
 									</div>
 									<br> <br> <strong>Product</strong>: Terminalia
 									Paniculata<br> <strong>Description</strong>: is a tree
-									native to southwest India (including the Western Ghats of india). Known in the timber trade as kindal, it has a
-									variety of names in local languages. It is economically
-									important for wood, medicinal uses, and raising silkworms.<br>
-									<strong>Usage/Application </strong>: Home Construction<br>
-									<strong>Log Species :Terminalia Paniculata </strong><br> <strong>Colors</strong>:
+									native to southwest India (including the Western Ghats of
+									india). Known in the timber trade as kindal, it has a variety
+									of names in local languages. It is economically important for
+									wood, medicinal uses, and raising silkworms.<br> <strong>Usage/Application
+									</strong>: Home Construction<br> <strong>Log Species
+										:Terminalia Paniculata </strong><br> <strong>Colors</strong>:
 									Light Black<br> <strong>Wood Type</strong>: Hard Wood<br>
 									<strong>Botanical Name</strong>: Terminalia Paniculata<br>
 								</div></li>
@@ -380,8 +202,8 @@
 												style="width: 100%">
 										</div>
 										<div class="column">
-											<img src="images/model/matti/matti_color_1.jpeg" alt="Mountains"
-												style="width: 100%">
+											<img src="images/model/matti/matti_color_1.jpeg"
+												alt="Mountains" style="width: 100%">
 										</div>
 									</div>
 									<br> <br> <strong>Product</strong>: Terminalia
@@ -566,7 +388,7 @@
 												style="width: 100%">
 										</div>
 									</div>
-									
+
 									<br> <br> <strong>Product</strong>: Pterocarpus
 									Marsupium <br> <strong>Description</strong>: Also known as
 									Malabar kino, Indian kino tree, or vijayasar, is a medium to
@@ -576,8 +398,8 @@
 										Marsupium </strong><br> <strong>Colors</strong>: Dark brown,slight
 									yellowish brown<br> <strong>Wood Type</strong>: Hard Wood<br>
 									<strong>Botanical Name</strong>: Pterocarpus Marsupium<br>
-							
-									
+
+
 								</div></li>
 
 
@@ -585,7 +407,7 @@
 						</ul>
 					</div>
 
-          <div class="grid_3">
+					<div class="grid_3">
 						<h6>Company</h6>
 						<ul class="list">
 							<li class="active"><a href='#'>Home</a></li>
@@ -612,32 +434,30 @@
 							</dd>
 						</dl>
 					</div>
-        </div>
+				</div>
 
-        <div class="row">
-          <div class="grid_5">
-            <div class="brand">
-              <h1 class="brand_name">
-                <a href="./">Timberwala</a>
-              </h1>
+				<div class="row">
+					<div class="grid_5">
+						<div class="brand">
+							<h1 class="brand_name">
+								<a href="./">Timberwala</a>
+							</h1>
 
-              <p class="brand_slogan">
-                Timber selling Co
-              </p>
-            </div>
-          </div>
-          <div class="grid_7 right">
-            <div class="copyright">
-              TIMBERWALA TIMBER SELLING CO © <span id="copyright-year"></span>
-              <a href="index-6.html">Privacy policy</a>
-              <!-- {%FOOTER_LINK} -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script>
+							<p class="brand_slogan">Timber selling Co</p>
+						</div>
+					</div>
+					<div class="grid_7 right">
+						<div class="copyright">
+							TIMBERWALA TIMBER SELLING CO © <span id="copyright-year"></span>
+							<a href="index-6.html">Privacy policy</a>
+							<!-- {%FOOTER_LINK} -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
     function StopEventPropagation(event) {
       if (event.stopPropagation) {
         event.stopPropagation();
@@ -646,12 +466,12 @@
       }
     }
   </script>
-  <script src="js/script.js"></script>
-<script>$(document).ready(function() {
+	<script src="js/script.js"></script>
+	<script>$(document).ready(function() {
   $("a.fancybox").fancybox()
 });</script>
 
-  <script>
+	<script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -661,7 +481,7 @@
       }
     }
     </script>
-    <script>
+	<script>
       $(document).ready(function(){
 			$(".menu-toggle a").click(function(){ 
 				$(".menu").slideToggle(700);
