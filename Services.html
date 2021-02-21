@@ -19,6 +19,9 @@
 	$(function() {
 		$("#header").load("Header.html");
 		$("#footer").load("footer.html");
+		$("a.fancybox").fancybox()
+		$(".menu-toggle a").click(function(){ 
+      	$(".menu").slideToggle(700);
 	});
 </script>
 </head>
@@ -112,7 +115,7 @@
 </script>
 
 <script>$(document).ready(function() {
-$("a.fancybox").fancybox()
+//$("a.fancybox").fancybox()
 });</script>
 <script src="js/script.js"></script>
 <script>
@@ -126,11 +129,11 @@ $("a.fancybox").fancybox()
   }
   </script>
   <script>
-    $(document).ready(function(){
-    $(".menu-toggle a").click(function(){ 
-      $(".menu").slideToggle(700);
-    });
-  });
+  //  $(document).ready(function(){
+   // $(".menu-toggle a").click(function(){ 
+    //  $(".menu").slideToggle(700);
+    //});
+  //});
   </script>
 </body>
 
