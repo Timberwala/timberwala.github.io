@@ -62,19 +62,19 @@
           action="https://formspree.io/f/mdoppyrw"
           method="POST"
         >
-            <label for="fname">Full Name</label>
-            <input required oninvalid="this.setCustomValidity('Enter Name')" type="text" id="fname" name="fullname" placeholder="Your name..">
+            <label  for="fname">Full Name</label>
+            <input required  type="text" id="fname" name="fullname" placeholder="Your name..">
         
             <label for="lname">Phone Number</label>
-            <input  type="text" id="phone" name="phone" placeholder="Your Phone Number..">
+            <input required type="text" id="phone" name="phone" placeholder="Your Phone Number..">
         
             <label for="lname">Email </label>
-            <input required oninvalid="this.setCustomValidity('Email cannot be blank')" type="text" id="phone" name="email" placeholder="Your Email ..">
+            <input required  type="text" id="phone" name="email" placeholder="Your Email ..">
         
          
         
             <label for="country">Product</label>
-            <select required oninvalid="this.setCustomValidity('Select Product ')" id="produc" name="product">
+            <select required  id="produc" name="product">
               <option value="" disabled selected hidden>Select Timber Type</option>
               <option value="East Indian RoseWood(Dalbergia Latifolia)">East Indian RoseWood(Dalbergia Latifolia)</option>
               <option value="Acacia Round Logs">Acacia</option>
@@ -94,7 +94,7 @@
            <div class="captcha">
 	<div class="spinner">
 		<label>
-			<input required type="checkbox" onclick="$(this).attr('disabled','disabled');">
+			<input id="captchaSpinCheck" required type="checkbox" onclick="$(this).attr('disabled','disabled');">
 			<span class="checkmark"><span>&nbsp;</span></span>
 		</label>
 	</div>
@@ -102,7 +102,7 @@
 		I'm not a robot
 	</div>
 	<div class="logo">
-		<img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
+		<img src="images/captcha.png"/>
 		<p>reCAPTCHA</p>
 		<small>Privacy - Terms</small>
 	</div>
@@ -123,8 +123,170 @@
     <!--========================================================
                             FOOTER
   =========================================================-->
-  <footer id="footer" class="footer">
-  </footer>
+  <footer id="footer" class="footer"></footer>
+
+  <div class="owl-carousel">
+    <div class="item">
+      <a rel="gallery"
+        title="East Indian RoseWood(Dalbergia Latifolia)"
+        class="thumb fancybox" href="#one"> <img
+        src="images/page-1_img01.jpg" alt="" /> <span
+        class="thumb_overlay"></span>
+
+        <div id="vestibulum" class="thumb_cnt">
+          <h3>East Indian RoseWood(Dalbergia Latifolia)</h3>
+
+          <p>East Indian RoseWood</p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+
+        </div>
+
+      </a> <a rel="gallery" title="East Indian Teak Wood  "
+        class="thumb fancybox" href="#two"> <img
+        src="images/page-1_img04.jpg" alt="" /> <span
+        class="thumb_overlay"></span>
+
+        <div class="thumb_cnt">
+          <h3>East Indian Teak Wood  </h3>
+
+          <p></p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+        </div>
+      </a>
+    </div>
+
+    <div class="item">
+      <a rel="gallery" title="Indian Acacia"
+        class="thumb fancybox" href="#three"> <img
+        src="images/page-1_img02.jpg" alt="" /> <span
+        class="thumb_overlay"></span>
+
+        <div class="thumb_cnt">
+          <h3>Acacia</h3>
+
+          <p></p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+        </div>
+      </a> <a rel="gallery" title="Terminalia Paniculata"
+        class="thumb fancybox" href="#four"> <img
+        src="images/page-1_img05.jpg" alt="" /> <span
+        class="thumb_overlay"></span>
+
+        <div class="thumb_cnt">
+          <h3>Terminalia Paniculata</h3>
+
+          <p>Fusce suscipiibus et magnis dis parient montes, nascetur
+            ride feugiat malesuada odio.</p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+        </div>
+      </a>
+    </div>
+    <div class="item">
+      <a class="thumb"<a rel="gallery"
+        title="Terminalia Tomentosa" class="thumb fancybox" href="#five">
+          <img src="images/page-1_img03.jpg" alt="" /> <span
+          class="thumb_overlay"></span>
+
+          <div class="thumb_cnt">
+            <h3>Terminalia Tomentosa</h3>
+
+            <p>Fusce suscipiibus et magnis dis parient montes,
+              nascetur ride feugiat malesuada odio.</p>
+            <span href="#products"><button>Details</button></span> <span
+              onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+          </div>
+      </a> <a rel="gallery" title="Terminalia Tomentosa"
+        class="thumb fancybox" href="#six"> <img
+          src="images/page-1_img06.jpg" alt="" /> <span
+          class="thumb_overlay"></span>
+
+          <div class="thumb_cnt">
+            <h3>Xylia Xylocarpa</h3>
+
+            <p>Fusce suscipiibus et magnis dis parient montes,
+              nascetur ride feugiat malesuada odio.</p>
+            <span href="#products"><button>Details</button></span> <span
+              onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+          </div>
+      </a>
+    </div>
+    <div class="item">
+      <a rel="gallery" title="Grwia Tilaefolia" class="thumb fancybox"
+        href="#seven"> <img src="images/page-1_img01.jpg" alt="" />
+        <span class="thumb_overlay"></span>
+
+        <div class="thumb_cnt">
+          <h3>Grwia Tilaefolia</h3>
+
+          <p>Fusce suscipiibus et magnis dis parient montes, nascetur
+            ride feugiat malesuada odio.</p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+        </div>
+      </a> <a rel="gallery" title="Mitragyna Parvifolia"
+        class="thumb fancybox" href="#eight"> <img
+        src="images/page-1_img04.jpg" alt="" /> <span
+        class="thumb_overlay"></span>
+
+        <div class="thumb_cnt">
+          <h3>Mitragyna Parvifolia</h3>
+
+          <p>Fusce suscipiibus et magnis dis parient montes, nascetur
+            ride feugiat malesuada odio.</p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+        </div>
+      </a>
+    </div>
+    <div class="item">
+      <a rel="gallery" title="Adina Cordifolia" class="thumb fancybox"
+        href="#nine"> <img src="images/page-1_img01.jpg" alt="" />
+        <span class="thumb_overlay"></span>
+
+        <div class="thumb_cnt">
+          <h3>Adina Cordifolia</h3>
+
+          <p>Fusce suscipiibus et magnis dis parient montes, nascetur
+            ride feugiat malesuada odio.</p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+        </div>
+      </a> <a rel="gallery" title="Anogeissus Latifolia"
+        class="thumb fancybox" href="#ten"> <img
+        src="images/page-1_img04.jpg" alt="" /> <span
+        class="thumb_overlay"></span>
+
+        <div class="thumb_cnt">
+          <h3>Anogeissus Latifolia</h3>
+
+          <p>Fusce suscipiibus et magnis dis parient montes, nascetur
+            ride feugiat malesuada odio.</p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="item">
+       <a rel="gallery" title="Pterocarpus Marsupium"
+        class="thumb fancybox" href="#eleven"> <img
+        src="images/page-1_img04.jpg" alt="" /> <span
+        class="thumb_overlay"></span>
+
+        <div class="thumb_cnt">
+          <h3> Pterocarpus Marsupium </h3>
+
+          <p></p>
+          <span href="#products"><button>Details</button></span> <span
+            onclick="location.href='Contacts.html'"><button>Enquiry</button></span>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
 <script>
   function StopEventPropagation(event) {
@@ -144,6 +306,7 @@
     var form = document.getElementById("my-form");
     var button = document.getElementById("my-form-button");
     var status = document.getElementById("my-form-status");
+    var captchaSpinCheck= document.getElementById("captchaSpinCheck");
 
     // Success and Error functions for after the form is submitted
     
@@ -152,6 +315,7 @@
       button.style = "background-color:blue";
       button.innerText = "Submitted";
       status.innerHTML = "<h3>Thanks For Contacting Timberwala We will Get You Shortly</h3>";
+      captchaSpinCheck.disabled = false;
      
     }
 
@@ -198,6 +362,7 @@
 		});
 	});
 </script>
+<script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

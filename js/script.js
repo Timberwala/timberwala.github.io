@@ -17,7 +17,7 @@ include('js/jquery.easing.js');
 
 /* Stick up menus
  ========================================================*/
-;
+
 (function ($) {
 	var o = $('html');
 	if (o.hasClass('desktop')) {
