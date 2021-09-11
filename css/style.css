@@ -757,7 +757,7 @@ strong {
 .brand {
   display: inline-block;
   min-height: 71px;
-  padding: 7px 0 0 76px;
+  padding: 90px 300 0 76px;
   background: url(../images/logo.png) no-repeat 0 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
