@@ -1403,3 +1403,54 @@ button{
 	left:40px;
 	bottom: 40px;
 }
+
+.whatsAppBtn {
+  display: inline-block;
+}
+
+.whatsAppBtn a{
+  display: inline;
+}
+.whatsappIcon img{
+  float: left;
+  width: 14px !important;
+  padding-right: 3px;
+}
+.or{
+  display: block;
+  margin: 50px 0 50px 0;
+  overflow: hidden;
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  position: relative;
+  padding: 10px 0;
+}
+.or .text{
+  width: auto;
+  background-color: #eae9e9;
+  position: relative;
+  top: auto;
+  z-index: 1000;
+  padding: 5px;
+}
+.or span{
+  width: 100%;
+  border-bottom: 1px solid #6c6a6a;
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  z-index: 999;
+}
+
+.contactWhatsapp{
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+.contactWhatsapp a{
+  color: #000000;
+}
+.contactWhatsapp a img{
+  width: 40px;
+}
