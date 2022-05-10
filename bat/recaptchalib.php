@@ -237,7 +237,7 @@ function recaptcha_mailhide_url($pubkey, $privkey, $email) {
 	$ky = pack('H*', $privkey);
 	$cryptmail = _recaptcha_aes_encrypt ($email, $ky);
 	
-	return "http://www.google.com/recaptcha/mailhide/d?k=" . $pubkey . "&c=" . _recaptcha_mailhide_urlbase64 ($cryptmail);
+	return "https://www.google.com/recaptcha/mailhide/d?k=" . $pubkey . "&c=" . _recaptcha_mailhide_urlbase64 ($cryptmail);
 }
 
 /**
